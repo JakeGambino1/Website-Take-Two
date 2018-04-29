@@ -1,0 +1,33 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #7eb3d6;
+}
+
+body {
+  position: relative;
+}
+
+.jumbotron {
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 300px 0;
+  background-image: url("https://www.planwallpaper.com/static/images/330563.jpg");
+  background-attachment: fixed;
+  text-shadow: 3px 3px 3px black;
+}
+
+#personalDevelopment, #marketing, #webDevelopment {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#bigThreeWrapper {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}

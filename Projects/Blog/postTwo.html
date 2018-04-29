@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <title>Blog Layout</title>
+  <link rel="stylesheet" href="postStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="header">
+    <ul>
+      <li class="brand"><a href="index.html">
+    <img src="logo.png"></a></li>
+      <li class="navLink"><a href="#">Loan Calculator</a></li>
+      <li class="navLink"><a href="#">Task List</a></li>
+      <li class="navLink"><a href="#">Book List</a></li>
+    </ul>
+  </div>
+
+  <div class="gridContainer">
+    <div class="cta">
+      <h1>Thanks for checking out my work.</h1>
+      <p>To the left (below on mobile), you will find a list of brief blog posts that demonstrate my knowledge of the various languages.</p>
+      <p>To the right (below on mobile), you will find videos I've record on YouTube, documenting my progress. They are listed from oldest to newest going downward.</p>
+      <p>Hopefully you will see some improvements and let me know if you think I should be taking a different approach.</p>
+      <p>Due to the fact the sidebar content is not retrieved from a database, please feel free to click the button below to reset at anytime.</p>
+      <a href="postTwo.html"><button>Reset</button></a>
+    </div>
+
+    <div id="contentFocus">
+      <h2>Thanks for checking out the goods, yo</h2>
+      <p>Browse the items on the left and right, and if you see something interesting, just click the item to bring it into this main display window.</p>
+    </div>
+ 
+    <div class="sidebar mainBlogContent" id="leftSidebar">
+      <h3>Click on the content below for full view.</h3>
+      <div>
+        <a href="#contentFocus" onclick="focusContent(this)">
+          <h4>HyperText Markup Language (HTML)</h4>
+          <p>Basics of the page. The text and skeleton. Nothing fancy here. No alignments, no styling, no color, just letters at different sizes.</p>
+          <p>In fact, the only thing I would really note are classes, and ids. It marks them in special ways.</p>
+        </a></div>
+
+      <div>
+        <a href="#contentFocus" id="testTest" onclick="focusContent(this)">
+          <h4>Cascading Style Sheets (CSS)</h4>
+          <p>CSS is where much of the magic happens. You can take that text (markup) and change its appearance. The key thing that I noted is to never forget the cascading. If you get out of order with the different styles, you end up doing way more coding and the functioning seems less precise.</p>
+          <p>Truthfully, I still do a fair share of commenting out styles and then seeing if it is even necessary to narrow things down.</p>
+        </a></div>
+
+      <div>
+        <a href="#contentFocus" onclick="focusContent(this)">
+          <h4>Bootstrap</h4>
+          <p>Bootstrap is a CSS Library. Those different styles you made in CSS? Bootstrap has a plethora of premade ones. It makes mobile responsiveness and navigation bars, cards, and other components an absolute breeze.</p>
+          <p>It has "limitations" like any other piece of the puzzle. I have found that styling them to my own liking is kind of obnoxious if you become too attached to the styling premades. </p>
+          <p>Even with my focus on the vanilla languages (HTML, CSS, js), I find myself wanting to launch bootstrap, copy the parameters I like, and then move forward.</p>
+        </a></div>
+
+      <div>
+        <a href="#contentFocus" onclick="focusContent(this)">
+          <h4>JavaScript</h4>
+          <p>Other than day 1, where I was crashing my browser using while loops, it has been going very well. I have a couple projects uploaded, and I understand how it works. It is just a matter of knowing what I want to do with it. Without knowing any storage methods except localStorage (I've been really focusing on vanilla JavaScript), it is difficult to apply anything real interesting.</p>
+          <p>Using this to add styling and elements is an infinitely valuable tool.</p>
+        </a></div>
+    </div>
+
+    <div class="sidebar" id="rightSidebar">
+      <h3>Recent Videos</h3>
+      <p>Click the video header to focus it.</p>
+      <div class="vidWrapper" onclick="focusContent(this)">
+        <h4>Planetarium Project pt 1</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/xscrKgjR7R0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div class="vidWrapper" onclick="focusContent(this)">
+        <h4>Planetarium Project pt 2</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/PQx15n1vPmQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div class="vidWrapper" onclick="focusContent(this)">
+        <h4>CSS Grid and JS Content Focus</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/L-AsiJRdJwE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div class="vidWrapper" onclick="focusContent(this)">
+        <h4>Car Rant - Career Change</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/skt7dFDcFfs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div class="vidWrapper" onclick="focusContent(this)">
+        <h4>Car Rant 2 - Marketing</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/XAWMCbLoF3A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    </div>
+    
+    <div id="footerTop" class="footer">
+      <ul class="accordion">
+        <li class="tab">
+          <div class="social youtube">
+            <a class="socMedIcon" href="https://www.youtube.com/channel/UCI4oJ7J_GNPuVgk69cWDS3w"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="content">
+            <h3>YouTube</h3>
+            <p>Follow me on YouTube for regular updates on my coding progress.</p>
+          </div>
+        </li>
+        <li class="tab">
+          <div class="social twitter">
+            <a class="socMedIcon" href="https://twitter.com/MarketingBoon"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="content">
+            <h3>Twitter</h3>
+            <p>Follow me on Twitter for regular updates on my coding progress.</p>
+          </div>
+        </li>
+        <li class="tab">
+          <div class="social facebook">
+            <a class="socMedIcon" href="https://www.facebook.com/marketingboon"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="content">
+            <h3>Facebook</h3>
+            <p>Follow me on Facebook for regular updates on my coding progress.</p>
+          </div>
+        </li>
+        <li class="tab">
+          <div class="social linkedin">
+            <a class="socMedIcon" href="https://www.linkedin.com/in/jake-gambino1/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="content">
+            <h3>LinkedIn</h3>
+            <p>Check me out on LinkedIn for regular updates and information about employment.</p>
+          </div>
+        </li>
+        <li class="tab">
+          <div class="social github">
+            <a class="socMedIcon" href="https://github.com/JakeGambino1"><i class="fab fa-github"></i></a>
+          </div>
+          <div class="content">
+            <h3>Github</h3>
+            <p>Check out my Github page!</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> <!-- gridContainer -->
+
+  <script src="postScript.js"></script>
+</body>
+</html>

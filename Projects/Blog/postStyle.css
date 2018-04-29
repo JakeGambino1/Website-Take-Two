@@ -1,0 +1,238 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Cairo'; sans-serif;
+}
+
+body {
+  background: rgb(160, 190, 214);
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 901px) {
+.gridContainer {
+  margin-top: 75px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 2fr;
+  grid-template-areas:
+  "leftSidebar  cta     cta     rightSidebar"
+  "leftSidebar  contentFocus contentFocus rightSidebar"
+  "leftSidebar    footerTop        footerTop        rightSidebar"
+}
+}
+
+#contentFocus {
+  grid-area: contentFocus;
+  height: auto;
+  /* align-items: stretch; */
+  font-size: 20px;
+  color:rgb(2,0,130);
+  position: relative;
+  padding-top: 56.25%;
+}
+
+#contentFocus > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header ul {
+  position: fixed;
+  top: 0;
+  background: rgb(160, 190, 214);
+  border-bottom: 2px solid rgb(2,0,130);
+  height: 75px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.header li {
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.header a {
+  color: rgb(2,0,130);
+  text-decoration: none;
+}
+
+.header img {
+  max-width: 300px;
+  max-height: 75px;
+}
+
+.navLink {
+  float: right;
+}
+
+.header a:hover {
+  color: white;
+  text-shadow: 1px 1px rgb(2,0,130);
+}
+
+.cta {
+  max-width: 80%;
+  border: 5px solid rgb(2,0,130);
+  grid-area: cta;
+  background: rgb(160,190,214);
+  color: rgb(2,0,130);
+  margin: auto;
+  box-shadow: 10px 10px 30px rgba(2,0,130, 0.5);
+  padding: 30px;
+}
+
+.cta button {
+  background: rgb(2,0,130);
+  color: white;
+  font-size: 30px;
+  margin: auto;
+}
+
+.sidebar {
+  background-color: rgb(2,0,130);
+  color: white;
+  padding: 10px;
+}
+
+#rightSidebar {
+  grid-area: rightSidebar;
+  overflow: hidden;
+  min-width: 200px;
+}
+
+#leftSidebar {
+  grid-area: leftSidebar;
+}
+
+#leftSidebar > div {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+#leftSidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+#footerTop {
+  grid-area: footerTop;
+}
+
+.accordion {
+  background: rgb(160,190,214);
+  max-width: 100%;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 250px;
+  font-size: 0;
+  border-top: 1px solid rgb(2,0,130);
+}
+
+.tab {
+  display: inline-block;
+  background-color: rgb(2,0,130);
+  border-right: 1px solid white;
+  width: 80px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+  width: 450px;
+}
+
+.tab .content {
+  background: rgb(160, 190, 214);
+  color: rgb(2,0,130);
+  width: 360px;
+  height: 100%;
+  margin-left: 80px;
+  position: relative;
+  padding: 55px;
+  padding-left: 10px;
+}
+
+.tab .content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.tab .content p {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+}
+
+.tab .socMedIcon {
+  font-family: FontAwesome;
+  font-size: 30px;
+  color: white;
+}
+
+.socMedIcon {
+  display: block;
+  padding: 10px;
+  padding-right: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .gridContainer {
+    margin-top: 75px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "cta"
+    "contentFocus"
+    "leftSidebar"
+    "rightSidebar"
+    "footerTop";
+  }
+  
+  #rightSidebar {
+    margin: auto;
+  }
+  
+  .footerTop {
+    width: 95%;
+  }
+  
+  .tab {
+    display: block;
+    width: 100%;
+    border-top: 2px solid white;
+  }
+  
+  .accordion {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+  
+  .tab .content {
+    width: 85%;
+  }
+  
+  .tab:hover {
+    width: 100%;
+  }
+}
+
+.mainBlogContent {
+  padding-top: 0;
+}

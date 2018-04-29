@@ -1,0 +1,62 @@
+.navbarTagline {
+  display: block;
+  font-size: 14px;
+}
+
+.cardLinks {
+  display: block;
+}
+
+.wholeBody {
+  margin-top: 80px;
+}
+
+.jumbotron {
+  padding: 30px;
+  box-shadow:2px 2px 30px 2px black inset;
+}
+
+.traitCard {
+  margin: 10px 0;
+  box-shadow:2px 2px 20px black inset;
+}
+
+.rightAlignElement {
+  text-align: right;
+}
+
+.centerAlignElement {
+  text-align: center;
+}
+
+.cardImg {
+  margin: 10px 0;
+}
+
+.dropdown-item:hover {
+  background: gray;
+  color: white;
+}
+
+#introVid {
+  margin: 10px 0;
+}
+
+.foot ul, .foot h5, .foot p {
+  text-align: center;
+  list-style-type: none;
+}
+
+#socMed p, .footTechnology p {
+  font-size: 20px;
+  line-height: 18px;
+  display: block;
+}
+
+.footerHead {
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid black;
+}
